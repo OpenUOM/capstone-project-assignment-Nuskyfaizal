@@ -42,11 +42,11 @@ export class AppServiceService {
   }
 
   deleteTeacher(payload: Object){
-    return this.http.post(`/${this.ROOT_URL}/deleteTeacher`, payload)
+    return this.http.delete(`/${this.ROOT_URL}/deleteTeacher`, payload)
   }
 
   editTeacher(payload: Object){
-    return this.http.post(`/${this.ROOT_URL}/editTeacher`, payload)
+    return this.http.put(`/${this.ROOT_URL}/editTeacher`, payload)
   }
 
   editStudent(payload: Object){
