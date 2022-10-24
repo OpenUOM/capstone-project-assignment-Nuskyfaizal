@@ -48,7 +48,7 @@ export class StudentTableComponent implements OnInit {
     }
     this.service.deleteStudent(student).subscribe((response)=>{
       this.getStudentData()
-    })
+    });
   }
 
   search(value) {
